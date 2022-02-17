@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Membership Management</title>
     <link rel="stylesheet" href="main.css" />
-    <script src="script.js"></script>
+    <script src="users.js" defer></script>
   </head>
   <body>
     <header>
@@ -18,75 +18,13 @@
     <div class="container">
       <div class="page-header">
         <div class="title-text item">
-          <h2>Membership Management</h2>
-          <span
-            >Here you can manage your membership packages. Note: Make sure you
-            are not deactivating packages assigned to active users.</span>
+          <h2>User Management</h2>
         </div>
         <div class="button">
-          <button class="header-button item">+ New Membership</button>
+          <button type="menu" onclick="gotoMemebership()" class="header-button item">+ New User</button>
         </div>
       </div>
-      <div id="membership-list" class="membership-list">
-
-        <div class="membership">
-          <h3>Price</h3>
-          <span>description</span>
-          <hr />
-          <div class="button-delete">
-            <button>
-                <i class="fa fa-trash" aria-hidden="true"></i>
-            </button>
-          </div>
-        </div>
-<!-- delete from here-->
-
-        <div class="membership">
-            <h3>Price</h3>
-            <span>description</span>
-            <hr />
-            <div class="button-delete">
-              <button>
-                <i class="fa fa-trash" aria-hidden="true"></i>
-              </button>
-            </div>
-          </div>
-
-
-          <div class="membership">
-            <h3>Price</h3>
-            <span>description</span>
-            <hr />
-            <div class="button-delete">
-              <button>
-                <i class="fa fa-trash" aria-hidden="true"></i>
-              </button>
-            </div>
-          </div>
-
-
-          <div class="membership">
-            <h3>Price</h3>
-            <span>description</span>
-            <hr />
-            <div class="button-delete">
-              <button>
-                <i class="fa fa-trash" aria-hidden="true"></i>
-              </button>
-            </div>
-          </div>
-
-
-          <div class="membership">
-            <h3>Price</h3>
-            <span>description</span>
-            <hr />
-            <div class="button-delete">
-              <button>
-                <i class="fa fa-trash" aria-hidden="true"></i>
-              </button>
-            </div>
-          </div>
+      <div id="users-list" class="card-list">
 
       </div>
       <footer>
